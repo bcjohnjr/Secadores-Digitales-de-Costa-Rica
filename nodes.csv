@@ -1,0 +1,33 @@
+id,name,operator,region,hydro_mw,scale,it_mw,regime,zone,rain_source,it_gwh_normal,heat_gwh,drying_heat_gwh,ras_heat_gwh,rejected_heat_gwh,mango_fresh_t,banano_fresh_t,platano_fresh_t,camaron_t,products
+1,Arenal,ICE,Guanacaste / Arenal,157.39,hub,33.14,R_embalse_arenal,ZN,ERA5,226.773,192.757,168.033,15.19,9.534,0.0,13155.1,1040.1,1128.26900648909,pina;banano;platano;harinas;harina_banano;rastrojo_pina;heno_pasto
+2,Corobicí,ICE,Guanacaste,180.0,hub,37.9,R_embalse_arenal,PN,ERA5,259.345,220.443,139.887,10.766,69.79,2555.0,0.0,0.0,1290.325749726509,mango;harinas;heno_pasto
+3,Sandillal,ICE,Guanacaste,31.97,medium,6.73,R_embalse_arenal,PN,ERA5,46.053,39.145,24.974,1.685,12.486,454.2,0.0,0.0,229.12644579576272,mango;harinas;heno_pasto
+4,Cote,CNFL,Tilarán,6.8,small,1.43,R_embalse_arenal,ZN,ERA5,9.785,8.318,6.994,0.929,0.395,0.0,546.7,43.2,48.68511403981287,pina;banano;platano;harinas;harina_banano;rastrojo_pina;heno_pasto
+5,Los Negros,ESPH / GELA,"Aguas Claras, Upala",17.0,small,3.58,C_caribe_norte,ZN,ERA5,25.665,21.815,19.285,1.371,1.16,0.0,1530.6,121.0,121.88301277100008,pina;banano;platano;harinas;harina_banano;rastrojo_pina;heno_pasto
+6,Los Negros II,ESPH,"Aguas Claras, Upala",28.0,medium,5.9,C_caribe_norte,ZN,ERA5,42.297,35.953,32.242,1.77,1.941,0.0,2560.0,202.4,200.8686523320951,pina;banano;platano;harinas;harina_banano;rastrojo_pina;heno_pasto
+7,Aguas Zarcas,COOPELESCA,"Aguas Zarcas, San Carlos",14.47,small,3.05,C_caribe_norte,ZN,ERA5,21.866,18.586,12.216,1.345,5.025,0.0,1290.5,102.0,103.83887959540507,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+8,Peñas,ICE,San Carlos,38.0,medium,8.0,C_caribe_norte,ZN,ERA5,57.352,48.749,31.35,4.481,12.918,0.0,3311.8,261.9,272.3642743486035,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+9,Chocosuela I,COOPELESCA,San Carlos,8.0,small,1.68,C_caribe_norte,ZN,ERA5,12.044,10.237,6.545,0.995,2.698,0.0,691.4,54.7,57.19649761320674,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+10,Chocosuela II,COOPELESCA,San Carlos,10.0,small,2.11,C_caribe_norte,ZN,ERA5,15.127,12.858,8.32,1.111,3.427,0.0,878.9,69.5,71.83607735944418,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+11,Chocosuela III,COOPELESCA,San Carlos,5.0,small,1.05,C_caribe_norte,ZN,ERA5,7.527,6.398,4.192,0.482,1.725,0.0,442.8,35.0,35.74781100825421,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+12,Balsa Inferior,CNFL,"Florencia, San Carlos",37.5,medium,7.9,C_caribe_norte,ZN,ERA5,56.635,48.14,32.192,2.723,13.225,0.0,3400.8,268.9,268.95972091924597,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+13,Sigifredo Solís Solís,CONELECTRICAS,San Ramón,26.0,medium,5.47,C_caribe_norte,ZN,ERA5,39.215,33.332,24.477,2.148,6.708,0.0,2334.6,184.6,186.22907258585764,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+14,San Lorenzo,CONELECTRICAS,San Ramón,17.73,small,3.73,C_caribe_norte,ZN,ERA5,26.741,22.729,16.884,1.223,4.623,0.0,1610.5,127.3,126.98984291503639,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+15,Daniel Gutiérrez,CNFL,San Ramón,21.0,small,4.42,C_caribe_norte,ZN,ERA5,31.687,26.934,19.512,2.07,5.352,0.0,1860.9,147.1,150.48126157760342,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+16,Toro I,ICE,Valle del Toro,27.0,medium,5.68,C_caribe_norte,ZN,ERA5,40.72,34.612,20.456,5.669,8.487,0.0,2160.9,170.9,193.37863478750847,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+17,Toro II,ICE,Valle del Toro,65.0,medium,13.69,C_caribe_norte,ZN,ERA5,98.144,83.423,51.256,10.969,21.197,0.0,5414.6,428.1,466.0833644790477,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+18,Toro III,ICE,Valle del Toro,48.0,medium,10.11,C_caribe_norte,ZN,ERA5,72.479,61.607,39.871,5.315,16.421,0.0,4212.0,333.0,344.20035170804766,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+19,El Encanto,CNFL,"Acapulco / Pitahaya, Puntarenas",8.6,small,1.81,P_pacifico,PC,ERA5,11.443,9.727,0.044,0.538,9.145,118.6,0.0,0.0,61.622417071371544,mango;harinas
+20,Electriona,CNFL,"Uruca, San José",5.8,small,1.22,P_pacifico,VC,ERA5,7.713,6.556,0.014,0.907,5.636,0.0,0.0,0.0,41.535551838162036,harinas
+21,Belén,CNFL,Santa Ana,10.5,small,2.21,P_pacifico,VC,ERA5,13.972,11.876,0.025,1.481,10.37,0.0,0.0,0.0,75.24063078880171,harinas
+22,Brasil,CNFL,Santa Ana,27.0,medium,5.68,P_pacifico,VC,ERA5,35.911,30.524,0.066,3.168,27.291,0.0,0.0,0.0,193.37863478750847,harinas
+23,La Garita,ICE,Alajuela,30.0,medium,6.32,P_pacifico,VC,ERA5,39.957,33.964,9.596,3.047,21.321,411.3,0.0,0.0,215.16777673539676,mango;harinas;cafe;pulpa_cafe
+24,Ventanas-Garita,ICE,Alajuela,97.0,hub,20.42,P_pacifico,VC,ERA5,129.102,109.737,31.695,7.777,70.265,1333.8,0.0,0.0,695.2098102748105,mango;harinas;cafe;pulpa_cafe
+25,Chucás,P.H. Chucás / ICE,Atenas / Balsa,50.0,medium,10.53,P_pacifico,VC,ERA5,66.574,56.588,16.502,3.537,36.549,688.9,0.0,0.0,358.49947611134934,mango;harinas;cafe;pulpa_cafe
+26,Río Macho,ICE,Orosi / Cartago,120.0,hub,25.27,C_caribe_norte,CA,ERA5,181.162,153.987,104.105,21.176,28.706,0.0,9923.6,784.6,860.3306515986512,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+27,Cachí,ICE,Cachí / Paraíso,102.0,hub,21.48,C_caribe_norte,CA,ERA5,153.991,130.892,90.129,15.946,24.817,0.0,8592.5,679.4,731.2980766260004,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+28,La Joya,ICE,Cartago / Turrialba corridor,50.0,medium,10.53,C_caribe_norte,CA,ERA5,75.49,64.166,43.908,8.162,12.096,0.0,4185.9,331.0,358.49947611134934,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+29,Angostura,ICE,Turrialba,210.0,hub,44.22,C_caribe_norte,CA,ERA5,317.015,269.463,185.382,33.031,51.049,0.0,17673.5,1397.4,1505.493526461906,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+30,Río Lajas,Hidroeléctrica Río Lajas,Turrialba,11.0,small,2.32,C_caribe_norte,CA,ERA5,16.632,14.137,9.924,1.485,2.729,0.0,946.2,74.8,78.98563956109501,pina;banano;platano;harinas;cafe;harina_banano;rastrojo_pina;pulpa_cafe
+31,Reventazón,ICE,Siquirres / Reventazón,305.0,hub,64.22,C_caribe_norte,CA,ERA5,460.396,391.336,256.576,29.196,105.564,0.0,27104.6,2143.1,2186.4042123334143,pina;banano;platano;harinas;harina_banano;rastrojo_pina
+32,Pirrís,ICE,Los Santos / Pacífico Central,134.0,hub,28.21,P_pacifico,PC,ERA5,178.353,151.6,113.191,25.05,13.359,1809.9,0.0,0.0,960.4245224217631,mango;harinas;cafe;pulpa_cafe;heno_pasto

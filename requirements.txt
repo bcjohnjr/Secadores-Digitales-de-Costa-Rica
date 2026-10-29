@@ -1,0 +1,6 @@
+# Python 3.13 (tested with 3.13.17)
+numpy==2.5.3
+networkx==3.7
+matplotlib==3.11.2
+pillow==12.3.0
+python-docx==1.2.0

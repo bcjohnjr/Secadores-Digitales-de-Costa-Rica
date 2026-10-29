@@ -1,0 +1,224 @@
+RESPUESTA AL ARBITRAJE INTERNO (documento de trabajo; no se envía a la revista)
+
+1. Suministro eléctrico y carbono — ACEPTADO
+   - Factor promedio: se usa la proporción renovable de la DEMANDA nacional (97,3 % en 2025; 86,8 % en 2024),
+     no la de la generación con exportaciones (98,6 %). Fuente: informe CENCE 2025 [1] y Delfino 2025 [52].
+   - Sensibilidad marginal: proporciones térmicas ×0,5 y ×1,5 (la reducción frente a Quantum sigue en 57 %) y perfil
+     plano sin estacionalidad (la reducción cae a 8 %). El 57 % se presenta como condicional en el resumen,
+     resultados y conclusiones.
+   - No se reconstruyó el despacho marginal histórico: el CENCE no publica la serie mensual marginal necesaria
+     en las fuentes consultadas; queda como limitación declarada.
+
+2. ERA5 — ACEPTADO Y APLICADO
+   - Series horarias ERA5 2010–2025 de las 34 ubicaciones descargadas, archivadas con su registro de procedencia
+     (05_Datos_ERA5) e incluidas en el archivo anónimo para pares.
+   - Corregido el límite de año: las fechas locales se restringen a 2010–2025 (prueba unitaria incluida).
+   - Las ventanas de tres días secos se cuentan directamente en la serie diaria, conservando el orden temporal;
+     sensibilidad con umbral de 2 mm por el sesgo húmedo de ERA5 [Lavers et al. 2022]. La cadena de Markov queda
+     solo como respaldo sin archivos meteorológicos.
+   - Palo Negro: solar y eólica horarias con ERA5; viento con corrección de sesgo (factor 2,00) ajustada al parque
+     eólico nacional observado en 2024–2025 (CENCE); reproduce 33,5 % y 42,3 % frente a 35,1 % y 40,5 % observados.
+     Cobertura horaria propia 68 % (62–75 % según el año).
+   - Perfiles de autorización contrastados con la precipitación ERA5 por régimen: mes más seco febrero o marzo,
+     correlación mensual 0,83–0,91 (Fig. S4a). La precipitación no es caudal; se declara.
+   - Temperatura del agua de entrada de los RAS: media del aire ERA5 por nodo, corregida a la altitud.
+
+3. Economía de GPU — ACEPTADO
+   - Cargo de capital al 9 % (US$5,29 mil millones/año): margen sobre capital de US$0,60 mil millones en el caso
+     interrumpible, −0,93 en el estacional, 1,48 firme; Quantum 0,71.
+   - Caso comercial conservador (caída de precio 15 %/año, descuento 15 % por interrupción, 85 % de horas
+     contratadas, impuesto 30 %): EBITDA US$2,75 mil millones; no cubre el capital (tampoco Quantum).
+   - Rampa de despliegue de tres años: VE por hogar en 4,0 años en el caso central; suspendido en los demás (ver punto B2).
+   - Se recomienda en la discusión ligar el beneficio a contratos firmados y a una cuota de suministro firme.
+
+4. Entrenamiento de frontera — ACEPTADO
+   - Resumen, resultados y conclusiones hablan de "capacidad teórica"; se explicitan supuestos (MFU 35 %,
+     convergencia, almacenamiento) y se cita la mayor demostración publicada (INTELLECT-1, 10 mil millones de
+     parámetros) [53].
+
+5. Agua y suelo — ACEPTADO
+   - Los 350 L/s de Quantum se presentan como disponibilidad declarada (límite superior), no consumo.
+   - Terreno separado en instalaciones directas y generación nueva; las hidroeléctricas existentes no se
+     atribuyen a la red y se declara ese límite.
+
+6. Balances de masa y logística — ACEPTADO
+   - Columna "Pretratamiento" en el cuadro de productos (870 198 t/año: cáscaras, semillas, recortes y líquido
+     de prensa) y diagrama de flujo de masa (Fig. S3).
+   - Costos de acarreo (10–30 km a US$0,15/t·km; US$6,1 millones/año) y de aplicación del líquido de prensa
+     (US$1/t). El margen del rastrojo es de −US$13,2 millones.
+
+Asuntos de envío
+   1. Documentos de la revista: se añadieron la declaración de contribuciones (CRediT) y la plantilla de cinco
+      revisores (al menos tres internacionales). FALTAN: completar los nombres de revisores y firmar la
+      autorización de publicación de la UCR. No se inventaron revisores.
+   2. Formato decimal: el resumen en inglés usa formato inglés y el resumen en español formato español en
+      ambas ediciones.
+   3. Referencias: el texto distingue anuncios de desarrolladores, prensa y estimaciones académicas de
+      documentos de operación verificados.
+   4. Condensado: se aclara que no es automáticamente agua destilada vendible; requiere caracterización,
+      categoría regulatoria y registro.
+   5. Paginación: español 30 páginas y inglés 28 en LibreOffice (dentro del límite). El material de detalle
+      está en el suplemento: métodos complementarios (corrección eólica y estacionalidad ERA5), cuadros S1–S7 y
+      figuras S1–S10. Nada se eliminó. Los encabezados de cuadro se repiten en cada página.
+   6. Envío limpio: 06_Envio_UCR contiene solo el manuscrito anónimo, su suplemento, la carta, la declaración
+      CRediT, la plantilla de revisores y un archivo de modelo y datos sin nombre de autor. La revista no
+      acepta preprints.
+
+Dimensionamiento de los sumideros de calor
+   - Granjas de camarones a 100 t/año por MW de TI del nodo: 3922 t/año (1,6–1,8 veces la producción nacional;
+     se declara la necesidad de exportar o sustituir importaciones) y 1,59 Mm³/año de agua de reposición (50 L/s).
+   - Corrientes de residuos y servicio escaladas con la carga (×3,28), con tope de suministro: café y pulpa 70 %
+     de la cosecha nacional; rastrojo de 6560 ha/año de las 66 266 ha sembradas (MOCUPP); pasto 490 000 t/año.
+     Fruta y harina de banano sin cambio (limitadas por rechazo y mercado).
+   - Resultado: reutilización de calor 67,8 % (ERF 52,4 %); quedan sin secar 175 381 t de pasto y 9553 t de pulpa.
+
+Acuicultura, cadena de frío y apicultura
+   - Camarón y pargo mancha en los 32 nodos, cada especie a 3 veces la producción nacional de 2020: 6873 t de camarón
+     (sustituye 2086 t importadas en 2020 y exporta 4787 t) y 2052 t de pargo en RAS marino de bajo recambio
+     (agua de mar artificial a 32 g/L). Agua de reposición 2,94 Mm³/año (93 L/s) y 13 156 t/año de sal.
+   - Harinas cruzadas y harina de banano cubren 18 % del alimento acuícola; se evitan 506 t/año de harina de pescado.
+   - Reutilización de calor 70,2 % (ERF 54,2 %).
+   - Pago en especie del secado: se registra al valor de mercado (Decreto 41779-H, arts. 13.3 y 17.3); entre empresas
+     inscritas el IVA se acredita igual que en efectivo; no añade ni ahorra impuestos.
+   - Frío por adsorción (agua a 45–55 °C): la cadena de frío solo usa 975 MWh de calor (+0,04 puntos); la congelación
+     sigue siendo eléctrica. El uso relevante es enfriar el calor del lado del aire del propio centro de datos:
+     escenario de sensibilidad (ver punto B7).
+   - Apicultura: 3200 colmenas, 96 t/año de miel (21 % de las importaciones de 2024); los techos verdes (93 ha) aportan
+     forraje para unas 9 t y cuestan unos US$56 millones. Refugios de colmenas con frío por adsorción: 36 MWh/año;
+     pausa de cría en frío opcional contra Varroa: 10 MWh/año eléctricos.
+
+SEGUNDO ARBITRAJE INTERNO (siete hallazgos mayores y asuntos de producción)
+
+B1. Disponibilidad hidroeléctrica no demostrada — ACEPTADO
+   - Resumen, discusión y conclusiones: la red "podría operar ... si estudios hidrológicos, de conexión y de
+     contratos confirman" excedentes; ya no se presenta como entregable en la práctica.
+   - Limitaciones: "No se ha establecido la energía hidroeléctrica excedente disponible para clientes nuevos en
+     cada central." Los perfiles de autorización siguen siendo supuestos, no despacho.
+
+B2. Programa de VE gratuitos sin financiamiento seguro — ACEPTADO (regla nueva en el modelo)
+   - Regla: beneficio financiado = mín(10 % del EBITDA; máx(0; EBITDA − cargo de capital 9 % − impuesto)).
+   - Caso interrumpible central: se financian US$589 millones/año, pero usan 98,5 % del margen tras el capital
+     (quedan US$9,2 millones); VE por hogar en 4,0 años con la rampa.
+   - Estación lluviosa (meta US$436 millones), año seco y todos los casos conservadores: SUSPENDIDO; se reanuda
+     solo cuando contratos firmados restablecen margen positivo. Suministro firme: usa 46 % del margen.
+   - Cuadro III, cuadro económico completo y Fig. S12 muestran el monto financiado y la caja tras el capital.
+   - Prueba unitaria nueva (test_community_funding_rule); 12 de 12 pruebas pasan.
+
+B3. Reducción de carbono de 57 % — ACEPTADO
+   - Comparación con despacho igualado: Quantum con el mismo calendario lluvioso llega a 81,3 g/kWh y la
+     ventaja de la red cae a 8 %. El resumen da ahora el intervalo 8–57 %.
+   - Emisiones absolutas además de intensidad: red estacional 158 kt CO₂/año para 2123 GWh de TI; Quantum
+     estacional 86 kt para 1062 GWh.
+   - NO HECHO: evidencia del despacho marginal del ICE/CENCE; no se publica la serie necesaria (limitación).
+
+B4. Límites de factibilidad acuícola — ACEPTADO
+   - Nota complementaria "Restricciones acuícolas": fuente de agua y descarga, salinidad, permisos (SETENA,
+     INCOPESCA, AyA/MINAE), mortalidad y bioseguridad, alimento y mercados, logística de biomasa.
+   - Efluentes (con la asignación de mariscos): camarón 5 523 080 m³/año a 3 g/L (16 569 t de sal) y pargo
+     296 814 m³/año a 32 g/L (9498 t); concentrar la salmuera tomaría 391 GWhₜ (63 % del calor rechazado).
+   - Se declara que la temperatura del aire es solo un sustituto de la del agua de entrada.
+   - "Sin agua de enfriamiento" se acompaña del agua de reposición de las granjas (5 819 895 m³/año, 185 L/s,
+     con la asignación de mariscos).
+
+B5. Entrenamiento de frontera — ACEPTADO
+   - Se presenta solo como cota teórica de capacidad; se elimina cualquier implicación de demostración.
+
+B6. Denominadores consistentes — ACEPTADO
+   - Cuadro II: encabezado "ERF: calor reutilizado / energía de la instalación (%)" (54,2 %); el 70,2 % se
+     define en el texto como calor reutilizado / calor recuperable. El agua de Quantum sigue rotulada como
+     disponibilidad declarada (límite superior).
+
+B7. Frío por adsorción — ACEPTADO como caso de sensibilidad
+   - COP central 0,35 (intervalo 0,3–0,5), dos etapas bajo 70 °C [Saha et al. 2001].
+   - Con la asignación de mariscos (más calor al RAS), COP 0,35: ahorro 33 GWh/año, reutilización 94,8 %,
+     PUE 1,088; COP 0,5: 42 GWh. Capital: 60 MW de enfriadores, US$42 millones; anualidad US$5,2 millones/año,
+     mayor que el ahorro (recuperación simple 10,5 años). Se declara que requiere validación de componentes antes de diseñar.
+
+Asuntos de producción
+   - Los cuadros II y III ya no se dividen entre páginas; ninguna fila se parte entre páginas.
+   - Letra de los cuadros: 9 pt.
+   - Descargador ERA5: umbral de día lluvioso 1,0 mm, igual que el modelo. Las series diarias archivadas en
+     05_Datos_ERA5 conservan la columna wet_day calculada con 0,1 mm; el modelo no la usa (cuenta 1 mm en la
+     serie horaria).
+   - Pendiente: verificar los distritos de cada central; firmar la autorización; completar cinco revisores.
+
+AMPLIACIONES DEL MODELO
+
+C1. Asignación comunitaria de mariscos (46 kg/persona/año)
+   - 190 424 habitantes de los 25 distritos anfitriones × 46 kg en peso vivo = 8760 t/año (6746 t de camarón y
+     2014 t de pargo, en la proporción de la producción nacional). Se produce en capacidad RAS adicional; las ventas
+     (8925 t: sustitución de 2086 t importadas, exportación de 4787 t de camarón y 2052 t de pargo) no cambian.
+   - Producción total 13 619 t de camarón y 4066 t de pargo (5,9 veces la producción nacional).
+   - Costo en efectivo US$64,4 millones/año (US$7,02/kg camarón, US$8,45/kg pargo; US$338 por habitante); valor a
+     precios internos US$73,8 millones; capital RAS adicional US$88 millones. Se paga del beneficio comunitario
+     antes que los VE (11 % del presupuesto central): VE por hogar en 4,3 años (4,0 sin mariscos). Se suspende con
+     el programa en los casos lluvioso, seco y conservador.
+   - Efectos: agua de reposición 5,82 Mm³/año (185 L/s; 53 % de la disponibilidad declarada de Quantum), sal
+     26 067 t/año, electricidad RAS 114 GWh/año, empleos acuícolas 1061; reutilización del calor 73,9 % (ERF 57,1 %);
+     el secado baja de 412 018 a 406 851 t/año porque el RAS toma más calor.
+   - Prueba unitaria nueva (test_seafood_gift).
+
+C2. Entrenamiento síncrono sobre NVIDIA Spectrum-XGS
+   - Evidencia: NVIDIA midió hasta 1,9 veces el ancho de banda de reducción NCCL frente a Ethernet convencional a
+     10 km (prueba de comunicación, no de entrenamiento); Google entrenó Gemini Ultra de forma síncrona entre varios
+     centros de datos. No hay demostración en 32 sitios pequeños con suministro interrumpible.
+   - Modelo: reducción de 2 TB de gradientes BF16 por paso en el anillo de fibra, 70 % solapada con el cálculo;
+     eficiencia de enlace 95 % (Spectrum-XGS) frente a 50 % (convencional), sin superar la capacidad de la fibra.
+   - Con 2 pares por tramo la sobrecarga sería 160 % (362 % sin XGS). GB300 necesita 7 pares por tramo con XGS
+     (13 sin él; US$139 millones de óptica adicional); Vera Rubin 17 (32; US$416 millones).
+   - Con esos pares, 10²⁷ FLOP desde junio: 1,30 meses (GB300) y 0,58 (Vera Rubin), igual que con sincronización
+     infrecuente, porque de julio a octubre todos los nodos tienen autorización plena. Exigir que todos operen a la
+     vez reduce el cómputo anual 9 %. Se mantiene como cota teórica.
+   - Referencias nuevas: Gemini Team 2023 (arXiv:2312.11805) y blog técnico de NVIDIA sobre scale-across.
+   - Prueba unitaria nueva (test_scale_across_bounds); 14 de 14 pruebas pasan.
+
+TERCER ARBITRAJE INTERNO
+
+M1. ERF externo frente a autoenfriamiento — ACEPTADO
+   - El frío devuelto al propio centro de datos no cuenta como reutilización (The Green Grid, ERE, ya citado).
+     ERF con autoenfriamiento = 1744,6 / (3054,9 − 33,3) = 57,7 % (antes se informaba 73,7 %); la reutilización
+     externa sigue en 73,9 %. El calor del autoenfriamiento (494 GWhₜ, 21 % del calor) se informa aparte.
+   - Prueba nueva: test_erf_external_boundary.
+
+M2. Escenarios enlazados — ACEPTADO
+   - Los mariscos comunitarios solo se crían donde el beneficio se financia (caso interrumpible y firme). En los
+     casos estacional y de año seco las corridas físicas excluyen esa producción: estación lluviosa 73,5 % de
+     reutilización, 333 985 t secadas (antes 76,3 % y 321 861 t).
+   - Alternativa "seguir vendiendo": exportar esa producción da US$53,6 millones y pierde US$10,8 millones/año.
+   - Caso comercial conservador como corrida física: se apagan las horas no vendidas (85 %): TI 2361 GWh,
+     390 920 t secadas, reutilización 77,8 %, sin mariscos comunitarios. Coherente con la factura eléctrica.
+   - Prueba nueva: test_scenarios_linked_to_funding.
+
+M3. Límite financiero — ACEPTADO EN PARTE
+   - Umbrales: el 10 % completo requiere ≥US$5,092 por GPU-hora (0,15 % menos que US$5,10); el margen tras el
+     capital desaparece bajo US$4,66. Los plazos se presentan como envolvente condicional de asequibilidad.
+   - Cuentas por entidad (nota complementaria): cómputo paga capital, electricidad y fondo comunitario; secado y
+     acuicultura reciben el calor sin costo y pagan sus insumos. Acuicultura comercial: costos US$65,6 millones
+     frente a ventas US$60,8 millones (pérdida US$4,8 millones).
+   - Óptica del entrenamiento síncrono: US$15,2 millones/año (GB300) dejaría el caso central US$6,0 millones por
+     debajo del 10 % completo.
+   - NO HECHO: modelo de flujo de caja con construcción, capital de trabajo, financiación y reposición; se declara.
+
+M4. Balance integrado y continuidad — ACEPTADO
+   - Proyecto integrado: 3055 (centros de datos) + 98 (secado) + 114 (RAS) + 131 (carga de VE) = 3398 GWh/año
+     (+11,2 %); 423 kt CO₂/año con factores marginales frente a 375 kt del centro de datos.
+   - Continuidad: cargas críticas del RAS 13 MW con suministro firme; calor RAS en horas de corte 26,4 GWhₜ/año
+     (37,1 en el estacional); inercia de tanques ~11 h/°C; respaldo de bombas de calor 8,6 MW, 8,8 GWh/año,
+     US$1,1 millones, 2,7 kt CO₂. La secuencia horaria de cortes no se resuelve (declarado).
+   - Temperaturas de adsorción: el COP constante y los 45–55 °C útiles se declaran como supuestos sin validar.
+
+M5. Calibración de afirmaciones — ACEPTADO
+   - La red de 400 MW se describe como caso de diseño hipotético; resumen con el 8 % y el 57 % y sus condiciones.
+   - Límite de biomasa: cuencas, distancias y absorción del mercado solo con topes y costos de acarreo (declarado).
+   - Entrenamiento: sensibilidad conjunta MFU 25–45 %, solapamiento 50–90 %, eficiencia de enlace 80–95 %:
+     4–14 pares por tramo (GB300; 9–39 con Vera Rubin) y 1,0–1,8 meses; el 95 % se declara como supuesto.
+
+Editoriales
+   - Resúmenes: 245 palabras (español) y 225 (inglés); se eliminó "8–8 %".
+   - Nodo mayor: "64 MW de TI y 71 MW de calor".
+   - Cuadro II: anchos de columna corregidos; sin palabras partidas.
+   - Precio de GPU: mínimo US$4,62 (3 años), máximo US$6,82 (2 años), mediana US$5,10 (3 años).
+   - Agua de Quantum: no se cobra en el caso central; si se consumiera completa, US$16,6 millones/año (sensibilidad).
+   - requirements.txt con versiones fijadas y REPRODUCIR.txt; sin --era5 el modelo se detiene (modo --synthetic aparte).
+   - 17 de 17 pruebas pasan.
+   - Pendiente (persona autora): firmar la autorización y completar cinco revisores.

@@ -1,0 +1,1110 @@
+{
+  "_note": "Every value is a scenario input. Sources and status are listed in the manuscript tables; 'assumption' means not measured.",
+  "network": {
+    "it_mw_by_scale": {
+      "hub": 10.0,
+      "medium": 4.0,
+      "small": 1.0
+    },
+    "pue": 1.1,
+    "it_utilisation": 0.9,
+    "recoverable_heat_fraction_of_it": 0.85,
+    "heat_supply_temperature_c": [
+      45,
+      55
+    ],
+    "fibre_route_factor": 1.35,
+    "fibre_cost_usd_per_km": [
+      15000,
+      25000,
+      60000
+    ],
+    "fibre_pairs_per_edge": 2,
+    "dwdm_channels_per_pair": 64,
+    "gbps_per_channel": 400,
+    "light_us_per_km": 4.9,
+    "sizing": {
+      "mode": "hydro_share",
+      "total_it_mw": 400.0,
+      "min_it_mw": 1.0,
+      "_note": "IT load allocated in proportion to each plant's installed capacity (21% of 1,900 MW nameplate; facility 23%); scale labels: hub >=20 MW, medium >=5 MW, small <5 MW"
+    }
+  },
+  "ice_permission_profiles": {
+    "_note": "Monthly fraction of IT capacity ICE/distributor allows to run (interruptible contract). Assumed from the dry-season (Dec-Apr) / rainy-season pattern; replace with CENCE monthly records.",
+    "C_caribe_norte": [
+      0.85,
+      0.75,
+      0.7,
+      0.75,
+      0.9,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.95
+    ],
+    "P_pacifico": [
+      0.65,
+      0.5,
+      0.45,
+      0.5,
+      0.8,
+      0.95,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.95,
+      0.8
+    ],
+    "R_embalse_arenal": [
+      0.75,
+      0.65,
+      0.6,
+      0.65,
+      0.85,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9
+    ],
+    "dry_year_multiplier_dry_months": 0.5,
+    "dry_months": [
+      1,
+      2,
+      3,
+      4,
+      12
+    ],
+    "seasonal_climate_optimised": [
+      0.25,
+      0.2,
+      0.2,
+      0.2,
+      0.6,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.6
+    ],
+    "_note_seasonal": "Design option: run critical/inference load only (20-25%) in the dry season, full training load May/June-December."
+  },
+  "site_regime": {
+    "1": "R_embalse_arenal",
+    "2": "R_embalse_arenal",
+    "3": "R_embalse_arenal",
+    "4": "R_embalse_arenal",
+    "5": "C_caribe_norte",
+    "6": "C_caribe_norte",
+    "7": "C_caribe_norte",
+    "8": "C_caribe_norte",
+    "9": "C_caribe_norte",
+    "10": "C_caribe_norte",
+    "11": "C_caribe_norte",
+    "12": "C_caribe_norte",
+    "13": "C_caribe_norte",
+    "14": "C_caribe_norte",
+    "15": "C_caribe_norte",
+    "16": "C_caribe_norte",
+    "17": "C_caribe_norte",
+    "18": "C_caribe_norte",
+    "19": "P_pacifico",
+    "20": "P_pacifico",
+    "21": "P_pacifico",
+    "22": "P_pacifico",
+    "23": "P_pacifico",
+    "24": "P_pacifico",
+    "25": "P_pacifico",
+    "26": "C_caribe_norte",
+    "27": "C_caribe_norte",
+    "28": "C_caribe_norte",
+    "29": "C_caribe_norte",
+    "30": "C_caribe_norte",
+    "31": "C_caribe_norte",
+    "32": "P_pacifico"
+  },
+  "climate_zone": {
+    "_note": "Working climate zone used for default rain-day climatology until ERA5 files are supplied.",
+    "1": "ZN",
+    "2": "PN",
+    "3": "PN",
+    "4": "ZN",
+    "5": "ZN",
+    "6": "ZN",
+    "7": "ZN",
+    "8": "ZN",
+    "9": "ZN",
+    "10": "ZN",
+    "11": "ZN",
+    "12": "ZN",
+    "13": "ZN",
+    "14": "ZN",
+    "15": "ZN",
+    "16": "ZN",
+    "17": "ZN",
+    "18": "ZN",
+    "19": "PC",
+    "20": "VC",
+    "21": "VC",
+    "22": "VC",
+    "23": "VC",
+    "24": "VC",
+    "25": "VC",
+    "26": "CA",
+    "27": "CA",
+    "28": "CA",
+    "29": "CA",
+    "30": "CA",
+    "31": "CA",
+    "32": "PC"
+  },
+  "rain_days_default": {
+    "_note": "Approximate days/month with >=1 mm precipitation for working climate zones. PLACEHOLDER climatology: replaced automatically when ERA5 files are supplied.",
+    "PN": [
+      1,
+      1,
+      1,
+      3,
+      13,
+      17,
+      13,
+      16,
+      20,
+      20,
+      9,
+      3
+    ],
+    "PC": [
+      2,
+      1,
+      2,
+      6,
+      17,
+      20,
+      17,
+      19,
+      22,
+      22,
+      13,
+      4
+    ],
+    "VC": [
+      3,
+      2,
+      3,
+      8,
+      19,
+      21,
+      19,
+      21,
+      23,
+      23,
+      15,
+      6
+    ],
+    "ZN": [
+      15,
+      11,
+      10,
+      11,
+      18,
+      22,
+      23,
+      23,
+      21,
+      21,
+      20,
+      19
+    ],
+    "CA": [
+      19,
+      15,
+      14,
+      14,
+      18,
+      21,
+      22,
+      20,
+      17,
+      18,
+      21,
+      21
+    ]
+  },
+  "grid_carbon": {
+    "thermal_kg_per_kwh": 0.697,
+    "_thermal_note": "IPCC residual fuel oil 77.4 t CO2/TJ at 40% net plant efficiency",
+    "average_2025_renewable_share": 0.973,
+    "average_2024_renewable_share": 0.868,
+    "marginal_thermal_share_normal": {
+      "dry": 0.5,
+      "shoulder": 0.2,
+      "wet": 0.02
+    },
+    "marginal_thermal_share_dry_year": {
+      "dry": 1.0,
+      "shoulder": 0.5,
+      "wet": 0.05
+    },
+    "dry_months": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "shoulder_months": [
+      5,
+      12
+    ],
+    "lpg_kg_co2_per_kwh_fuel": 0.227,
+    "lpg_burner_efficiency": 0.9,
+    "_average_note": "share of national DEMAND served by renewables (CENCE 2025 report: 97.3%; 2024: 86.8%); 98.6% is share of total generation including exports",
+    "marginal_sensitivity_scales": [
+      0.5,
+      1.5
+    ]
+  },
+  "drying": {
+    "latent_kwh_per_kg": 0.68,
+    "dryer_thermal_efficiency": {
+      "low": 0.38,
+      "central": 0.5,
+      "high": 0.62
+    },
+    "fan_kwh_e_per_kg_water": 0.08,
+    "electricity_tariff_usd_per_kwh": 0.12,
+    "lpg_usd_per_kwh_fuel": 0.09,
+    "dryer_capex_usd_per_tonne_water_per_year": 120.0,
+    "dryer_om_usd_per_tonne_water": 15.0,
+    "products": {
+      "mango": {
+        "edible_fraction": 0.65,
+        "moisture_fresh": 0.835,
+        "moisture_dried": 0.17,
+        "price_bulk_usd_kg": 5.6,
+        "price_premium_usd_kg": 12.0,
+        "processing_usd_per_kg_dried": 2.2,
+        "feed_price_usd_per_kg_fresh": 0.15,
+        "national_fresh_t": 29487,
+        "available_fraction": 0.25,
+        "months": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "zones": [
+          "PN",
+          "PC",
+          "VC"
+        ],
+        "priority": 1,
+        "retail_water": true,
+        "category": "fruta deshidratada"
+      },
+      "banano": {
+        "edible_fraction": 0.64,
+        "moisture_fresh": 0.749,
+        "moisture_dried": 0.08,
+        "price_bulk_usd_kg": 3.2,
+        "price_premium_usd_kg": 8.0,
+        "processing_usd_per_kg_dried": 1.4,
+        "feed_price_usd_per_kg_fresh": 0.05,
+        "national_fresh_t": 2276570,
+        "available_fraction": 0.05,
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "zones": [
+          "CA",
+          "ZN"
+        ],
+        "priority": 3,
+        "retail_water": true,
+        "category": "fruta deshidratada"
+      },
+      "platano": {
+        "edible_fraction": 0.6,
+        "moisture_fresh": 0.653,
+        "moisture_dried": 0.06,
+        "price_bulk_usd_kg": 3.2,
+        "price_premium_usd_kg": 8.0,
+        "processing_usd_per_kg_dried": 1.4,
+        "feed_price_usd_per_kg_fresh": 0.2,
+        "national_fresh_t": 90000,
+        "available_fraction": 0.1,
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "zones": [
+          "ZN",
+          "CA"
+        ],
+        "priority": 4,
+        "retail_water": true,
+        "category": "fruta deshidratada"
+      },
+      "pina": {
+        "edible_fraction": 0.55,
+        "moisture_fresh": 0.85,
+        "moisture_dried": 0.15,
+        "price_bulk_usd_kg": 6.0,
+        "price_premium_usd_kg": 12.0,
+        "processing_usd_per_kg_dried": 2.0,
+        "feed_price_usd_per_kg_fresh": 0.05,
+        "national_fresh_t": 2160000,
+        "available_fraction": 0.02,
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "zones": [
+          "ZN",
+          "CA"
+        ],
+        "priority": 2,
+        "retail_water": true,
+        "category": "fruta deshidratada",
+        "_source": "180 million boxes x 12 kg (2023); 2% reject fruit scenario"
+      },
+      "cafe": {
+        "edible_fraction": 1.0,
+        "moisture_fresh": 0.54,
+        "moisture_dried": 0.115,
+        "price_bulk_usd_kg": 0.0,
+        "price_premium_usd_kg": 0.0,
+        "processing_usd_per_kg_dried": 0.0,
+        "feed_price_usd_per_kg_fresh": 0.0,
+        "national_fresh_t": 176113,
+        "available_fraction": 0.7,
+        "months": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "nodes": [
+          13,
+          14,
+          15,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          32
+        ],
+        "priority": 6,
+        "retail_water": false,
+        "category": "café pergamino",
+        "service_only": true,
+        "service_margin": 0.0,
+        "_source": "1,591,979 bags of 46 kg green coffee 2025-26 = 73,231 t; parchment = green/0.80 at 11.5% moisture; wet parchment at 54%"
+      },
+      "harina_banano": {
+        "edible_fraction": 1.0,
+        "moisture_fresh": 0.78,
+        "moisture_dried": 0.12,
+        "price_bulk_usd_kg": 0.28,
+        "price_premium_usd_kg": 0.28,
+        "processing_usd_per_kg_dried": 0.04,
+        "feed_price_usd_per_kg_fresh": 0.0,
+        "national_fresh_t": 2276570,
+        "available_fraction": 0.05,
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "zones": [
+          "CA",
+          "ZN"
+        ],
+        "priority": 7,
+        "retail_water": false,
+        "category": "pienso para ganado y aves",
+        "dryer_capex_override": 40.0,
+        "hp_allowed": false
+      },
+      "rastrojo_pina": {
+        "edible_fraction": 0.5,
+        "moisture_fresh": 0.78,
+        "moisture_dried": 0.12,
+        "price_bulk_usd_kg": 0.18,
+        "price_premium_usd_kg": 0.18,
+        "processing_usd_per_kg_dried": 0.03,
+        "feed_price_usd_per_kg_fresh": 0.0,
+        "national_fresh_t": 1607200.0,
+        "available_fraction": 1.0,
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "zones": [
+          "ZN",
+          "CA"
+        ],
+        "priority": 8,
+        "retail_water": false,
+        "category": "forraje para ganado",
+        "press_kwh_per_t_fresh": 5.0,
+        "_source": "6,560 ha/yr renewed (of 66,266 ha planted, MOCUPP 2017) x 245 t/ha fresh at 11% DM; screw-pressed to 22% DM (edible_fraction 0.5 = pressed cake), dried to 88% DM",
+        "dryer_capex_override": 40.0,
+        "hp_allowed": false
+      },
+      "pulpa_cafe": {
+        "edible_fraction": 1.0,
+        "moisture_fresh": 0.8,
+        "moisture_dried": 0.12,
+        "price_bulk_usd_kg": 0.2,
+        "price_premium_usd_kg": 0.2,
+        "processing_usd_per_kg_dried": 0.03,
+        "feed_price_usd_per_kg_fresh": 0.0,
+        "national_fresh_t": 161108,
+        "available_fraction": 0.7,
+        "months": [
+          10,
+          11,
+          12,
+          1,
+          2
+        ],
+        "nodes": [
+          13,
+          14,
+          15,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          32
+        ],
+        "priority": 9,
+        "retail_water": false,
+        "hp_allowed": false,
+        "dryer_capex_override": 40.0,
+        "category": "pienso para ganado (pulpa de café)",
+        "_source": "pulp = 40% of fresh cherry; cherry = 5.5 x green coffee (73,231 t); 80% moisture; assumption"
+      },
+      "heno_pasto": {
+        "edible_fraction": 1.0,
+        "moisture_fresh": 0.8,
+        "moisture_dried": 0.12,
+        "price_bulk_usd_kg": 0.3,
+        "price_premium_usd_kg": 0.3,
+        "processing_usd_per_kg_dried": 0.03,
+        "feed_price_usd_per_kg_fresh": 0.005,
+        "national_fresh_t": 490000.0,
+        "available_fraction": 1.0,
+        "months": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "nodes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          32
+        ],
+        "priority": 10,
+        "retail_water": false,
+        "hp_allowed": false,
+        "dryer_capex_override": 40.0,
+        "category": "heno para la estación seca (ganado)",
+        "_source": "MAG/Infoagro Chorotega 2026 transvala hay budget: ₡2,500 per ~16 kg bale (≈US$0.30/kg), 700 bales/ha/yr, cost ₡1,410/bale; rainy-season cut dried with data-centre heat (scenario)"
+      }
+    },
+    "website_capacity_case_dryer_heat_use": 0.65,
+    "sun_drying": {
+      "days_needed": 3,
+      "base_loss": 0.1,
+      "failed_batch_loss": 0.6,
+      "price_factor_vs_bulk": 0.5,
+      "labour_h_per_t_fresh_per_day": 6.0,
+      "labour_usd_per_h": 3.5,
+      "processing_usd_per_kg_dried_fraction": 0.6,
+      "rain_persistence_r": 0.3,
+      "rain_persistence_range": [
+        0.0,
+        0.5
+      ],
+      "_persistence_note": "first-order Markov occurrence model: P(dry|dry)=P(dry)+r(1-P(dry)); r=0 reproduces independence. Replaced by directly counted 3-day dry windows when ERA5 daily series are supplied.",
+      "wet_mm": 1.0,
+      "wet_mm_sensitivity": 2.0
+    },
+    "fresh_local_price_usd_kg": {
+      "mango": 0.3,
+      "banano": 0.1,
+      "platano": 0.35
+    },
+    "farmer_share_of_dried_margin": 0.5,
+    "heat_pump": {
+      "smer_kg_per_kwh": 3.0,
+      "smer_range": [
+        2.0,
+        4.0
+      ],
+      "dc_heat_kwh_per_kg": 0.2,
+      "condensate_recovery": 0.9,
+      "booster_cop": 3.0,
+      "capex_usd_per_tonne_water_per_year": 180.0,
+      "_note": "Closed-loop dehumidifying heat pump assisted by data-centre heat; latent heat recovered at the evaporator; SMER 1-4 kg/kWh reported for heat pump dryers"
+    },
+    "distilled_water": {
+      "retail_cap_m3_per_year": 3000.0,
+      "retail_net_usd_per_m3": 400.0,
+      "treatment_usd_per_m3": 60.0,
+      "process_water_value_usd_per_m3": 1.5,
+      "irrigation_value_usd_per_m3": 0.3,
+      "_note": "Condensate requires activated carbon, UV/ozone, testing and Ministerio de Salud registration; retail market capped; stubble and meal condensate never sold"
+    },
+    "_note_bulk_dryers": "Bulk belt dryers for feeds and forage: US$40 per tonne of water per year annualised capital (assumption)",
+    "feedstock_scaling": {
+      "factor": 3.279,
+      "streams": [
+        "cafe",
+        "pulpa_cafe",
+        "rastrojo_pina",
+        "heno_pasto"
+      ],
+      "_note": "Residue and toll-service streams scaled with node size (400/122 MW), capped at 100% of supply; retail fruit and banana meal held at reject-rate/market limits",
+      "caps": {
+        "cafe": 0.7,
+        "pulpa_cafe": 0.7,
+        "_note": "coffee capped at the share of the harvest assumed within 10-30 km of a coffee node (Brunca, Coto Brus and Guanacaste excluded); assumption"
+      }
+    }
+  },
+  "aquaculture": {
+    "nodes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "camaron_t_per_node": 150.0,
+    "camaron_t_per_node_range": [
+      50.0,
+      300.0
+    ],
+    "water_temp_c": 29.0,
+    "node_ambient_water_c": {
+      "7": 24.0,
+      "8": 24.0,
+      "9": 23.5,
+      "10": 23.5,
+      "11": 23.0,
+      "12": 23.5,
+      "13": 22.0,
+      "14": 22.5,
+      "15": 22.5,
+      "19": 27.0
+    },
+    "stocking_kg_per_m3_harvest": 30.0,
+    "cycles_per_year": 3.0,
+    "makeup_fraction_per_day": 0.1,
+    "tank_depth_m": 1.2,
+    "ua_w_per_m2_k": 15.0,
+    "ras_kwh_e_per_kg": 6.0,
+    "fcr_camaron": 1.4,
+    "camaron_diet_fishmeal_fraction": 0.2,
+    "camaron_price_usd_kg": 9.0,
+    "camaron_byproduct_fraction_processed": 0.4,
+    "processed_share": 0.5,
+    "camaron_meal_yield_per_kg_byproduct": 0.25,
+    "camaron_meal_protein": 0.5,
+    "snapper_cases_t": {
+      "actual_2020": 684,
+      "0.1pct": 3711,
+      "0.5pct": 18555,
+      "1pct": 37110
+    },
+    "snapper_fcr": 1.6,
+    "snapper_diet_fishmeal_fraction": 0.3,
+    "fishmeal_protein": 0.65,
+    "snapper_fillet_yield": 0.42,
+    "snapper_meal_yield_per_kg_byproduct": 0.22,
+    "snapper_meal_protein": 0.6,
+    "max_fishmeal_protein_replacement_snapper_diet": 0.3,
+    "max_fishmeal_protein_replacement_camaron_diet": 0.5,
+    "byproduct_moisture": 0.75,
+    "meal_moisture": 0.08,
+    "meal_value_usd_kg": 1.9,
+    "meal_processing_usd_kg": 0.3,
+    "meal_nodes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "central_loop_case": "nodes_ras",
+    "sizing": "national_multiple",
+    "camaron_t_per_mw_it": 100.0,
+    "_note_sizing": "Each species = 3 x national production (camaron 2,291 t in 2020, MarViva 2023; snapper 684 t in 2020), shared among all 32 nodes in proportion to IT load: domestic market plus a stated export share",
+    "ambient_source": "era5_air_mean",
+    "_note_ambient": "Source-water temperature = ERA5 2010-2025 mean 2-m air temperature at the node (elevation-corrected); node_ambient_water_c used without ERA5",
+    "national_multiple": 3.0,
+    "national_camaron_t": 2291.0,
+    "national_snapper_t": 684.0,
+    "camaron_salt_kg_per_m3": 3.0,
+    "salt_usd_per_kg": 0.15,
+    "banana_meal_max_inclusion_camaron": 0.15,
+    "banana_meal_max_inclusion_snapper": 0.1,
+    "_note_banana_meal": "assumed maximum inclusion of green-banana meal (carbohydrate) in aquafeeds",
+    "snapper_ras": {
+      "water_temp_c": 28.0,
+      "stocking_kg_per_m3_harvest": 40.0,
+      "cycles_per_year": 1.25,
+      "makeup_fraction_per_day": 0.01,
+      "salt_kg_per_m3": 32.0,
+      "ras_kwh_e_per_kg": 8.0,
+      "price_usd_kg": 6.5,
+      "fillet_yield_for_cold_chain": 0.42,
+      "_note": "low-exchange marine RAS (1%/day, denitrification) with artificial seawater at 32 g/L; assumptions"
+    },
+    "camaron_price_export_usd_kg": 6.0,
+    "effluent_note": "camaron effluent at 3 g/L and snapper effluent at 32 g/L require discharge permits; snapper brine may be concentrated with node heat to recover salt",
+    "community_seafood": {
+      "enabled": true,
+      "kg_per_person_year": 46.0,
+      "basis": "whole (live) weight",
+      "split": "pro rata to the national production of each species (camaron 2,291 t; snapper 684 t)",
+      "camaron_feed_usd_per_kg_feed": 1.2,
+      "snapper_feed_usd_per_kg_feed": 1.5,
+      "camaron_seed_usd_per_kg": 0.5,
+      "snapper_seed_usd_per_kg": 0.8,
+      "ras_capex_usd_per_kg_year": 10.0,
+      "ras_life_years": 15,
+      "_note": "46 kg/person/year whole weight for every resident of the host districts, produced in additional RAS capacity on top of the market tonnage (3 x national production), so market sales and exports are unchanged. Distributed free; its cash production cost (feed, seed, RAS electricity, labour, salt, annualised RAS capital) is charged to the community budget before EVs and is suspended with it. Feed, seed and RAS capital costs are assumptions."
+    }
+  },
+  "comparators": {
+    "quantum_limon": {
+      "it_mw": 200.0,
+      "pue": 1.2,
+      "utilisation": 0.9,
+      "water_l_s": 350.0,
+      "land_ha": 42.0,
+      "heat_reuse_fraction": 0.0,
+      "own_renewables_mw": {},
+      "supply": "firm ICE grid + on-site thermal backup",
+      "lat": 9.9907,
+      "lon": -83.0359
+    },
+    "palo_negro_bagaces": {
+      "it_mw": 38.0,
+      "it_mw_alt": 120.0,
+      "pue": 1.15,
+      "utilisation": 0.9,
+      "water_l_s": 0.0,
+      "pv_mw": 80.0,
+      "wind_mw": 40.0,
+      "pv_cf": 0.19,
+      "wind_cf": 0.4,
+      "battery_mw": 40.0,
+      "battery_mwh": 160.0,
+      "battery_rte": 0.88,
+      "pv_ha_per_mw": 1.6,
+      "wind_ha_direct_per_mw": 0.3,
+      "heat_reuse_fraction": 0.0,
+      "supply": "own PV+wind+battery, ICE backup",
+      "lat": 10.66,
+      "lon": -85.2,
+      "era5_site": "C2 Palo Negro AI HPC Campus (Bagaces proxy)",
+      "era5_wind": {
+        "cut_in_ms": 3.0,
+        "rated_ms": 12.5,
+        "cut_out_ms": 25.0,
+        "observed_fleet": [
+          {
+            "year": 2024,
+            "gwh": 1239.5,
+            "mw": 402.335,
+            "source": "CENCE Informe de generación renovable 2024"
+          },
+          {
+            "year": 2025,
+            "gwh": 1550.362,
+            "mw": 436.7,
+            "source": "CENCE Informe de atención de la demanda y producción 2025"
+          }
+        ],
+        "_note": "ERA5 100-m wind at the Bagaces proxy cell scaled by one factor so the modelled capacity factor in 2024-2025 equals the observed pooled national wind fleet capacity factor"
+      },
+      "era5_pv": {
+        "performance_ratio": 0.86,
+        "gamma_per_k": -0.004,
+        "noct_c": 45.0,
+        "dc_ac_ratio": 1.25,
+        "_note": "fixed tilt; POA approximated by GHI at 10.7 N"
+      }
+    }
+  },
+  "pv_monthly_index_guanacaste": [
+    1.12,
+    1.16,
+    1.18,
+    1.1,
+    0.95,
+    0.9,
+    0.95,
+    0.95,
+    0.85,
+    0.85,
+    0.94,
+    1.05
+  ],
+  "wind_monthly_index_guanacaste": [
+    1.55,
+    1.5,
+    1.3,
+    1.0,
+    0.7,
+    0.75,
+    1.0,
+    0.85,
+    0.55,
+    0.5,
+    0.9,
+    1.4
+  ],
+  "compute": {
+    "gb300_nvl72": {
+      "rack_kw": 135.0,
+      "fp8_dense_ef_per_rack": 0.36,
+      "gpus_per_rack": 72
+    },
+    "vera_rubin_nvl144": {
+      "rack_kw": 190.0,
+      "fp8_dense_ef_per_rack": 1.2,
+      "gpus_per_rack": 72
+    },
+    "non_rack_it_overhead": 0.1,
+    "mfu": 0.35,
+    "target_training_flop": 1e+27,
+    "model_params": 1000000000000.0,
+    "pseudo_gradient_bytes_per_param": 0.5,
+    "tokens_per_step": 16000000.0,
+    "diloco_inner_steps": [
+      1,
+      10,
+      100,
+      500
+    ],
+    "cluster_target_flop": 3e+26,
+    "scale_across": {
+      "gradient_bytes_per_param": 2.0,
+      "compute_comm_overlap": 0.7,
+      "link_efficiency_off_the_shelf": 0.5,
+      "link_efficiency_spectrum_xgs": 0.95,
+      "target_exposed_overhead": 0.05,
+      "max_fibre_pairs": 48,
+      "optics_usd_per_400g_end": 5000.0,
+      "line_system_usd_per_pair_edge": 200000.0,
+      "_note": "Fully synchronous data-parallel training across all 32 sites (gradient all-reduce every step) over the dark-fibre ring. Spectrum-XGS raises achieved all-reduce bandwidth up to 1.9x over off-the-shelf Ethernet in a 10-km NCCL benchmark (NVIDIA 2025); modelled as link efficiency 0.95 vs 0.50 of line rate, so it cannot exceed fibre capacity. Overlap of gradient communication with the backward pass, optics and line-system costs are assumptions. Strict synchronous operation needs every site powered: availability = minimum allowed fraction across nodes each month (assumes curtailment hours are nested); the elastic variant drops curtailed sites.",
+      "sensitivity": {
+        "mfu": [
+          0.25,
+          0.35,
+          0.45
+        ],
+        "overlap": [
+          0.5,
+          0.7,
+          0.9
+        ],
+        "link_efficiency": [
+          0.8,
+          0.95
+        ]
+      }
+    }
+  },
+  "jobs": {
+    "dc_fte_per_mw": 0.5,
+    "drying_fte_per_1000_t_dried": 12.0,
+    "ras_fte_per_100_t": 6.0,
+    "drying_fte_per_1000_t_bulk": 2.0
+  },
+  "land": {
+    "dc_ha_per_mw": 0.05,
+    "dryer_ha_per_1000_t_water": 0.08,
+    "ras_ha_per_100_t": 0.5
+  },
+  "economics": {
+    "gpu_hour_price_usd": {
+      "central": 5.1,
+      "low": 4.62,
+      "high": 6.82,
+      "on_demand_median": 11.59,
+      "_source": "AMCompute GB300 cloud price tracker, Oct 2026: 3-yr reserved median 5.10, range 4.62-6.82 (2-3 yr), on-demand median 11.59"
+    },
+    "rack_capex_usd": {
+      "low": 5700000.0,
+      "central": 7000000.0,
+      "high": 8300000.0,
+      "_source": "Wing VC/Data Gravity Aug 2026: ~US$5.0M rack, ~5.7M deployed; AMCompute appraisal Oct 2026: US$8-8.6M installed incl. networking"
+    },
+    "facility_capex_usd_per_mw_it": {
+      "low": 8000000.0,
+      "central": 10000000.0,
+      "high": 14000000.0,
+      "_note": "assumption: liquid-cooled shell, MV connection, CDUs, dry coolers"
+    },
+    "it_life_years": 5,
+    "it_residual_fraction": 0.2,
+    "facility_life_years": 20,
+    "maintenance_frac_it_capex": 0.025,
+    "insurance_frac_capex": 0.005,
+    "staff_usd_per_fte": 45000.0,
+    "network_ops_usd_per_mw": 50000.0,
+    "electricity_usd_per_kwh": 0.12,
+    "palo_negro_own_lcoe_usd_per_kwh": 0.05,
+    "fibre_om_frac": 0.02,
+    "community_share_of_ebitda": 0.1,
+    "fx_crc_per_usd": 505.0,
+    "commercial_conservative": {
+      "gpu_price_decline_per_year": 0.15,
+      "interruption_discount": 0.15,
+      "sold_fraction": 0.85,
+      "wacc": 0.09,
+      "tax_rate": 0.3,
+      "ramp": [
+        0.33,
+        0.67,
+        1.0
+      ],
+      "_note": "price decline averaged over 5-year GPU life; discount for interruptible supply; share of permitted GPU-hours actually contracted; capital charge at WACC replaces refresh reserve; CR corporate income tax 30% (free-zone exemptions not assumed)"
+    },
+    "community_funding_rule": "min(share x EBITDA, max(0, EBITDA - capital charge - income tax)); programme suspended when no distributable cash",
+    "charge_declared_water": false,
+    "water_usd_per_m3": 1.5,
+    "_note_water": "Quantum's 350 L/s is declared availability, not metered consumption; it is not charged in the central economics. water_upper_bound_usd reports the cost if the full volume were consumed at US$1.5/m3 (sensitivity)."
+  },
+  "community": {
+    "persons_per_household": 2.8,
+    "_hh_source": "La Nación on Censo 2022: average household fell from 4 to 2.8 persons",
+    "ev_price_usd": {
+      "low": 20000.0,
+      "central": 25000.0,
+      "high": 35000.0
+    },
+    "ev_km_per_year": 12000.0,
+    "ev_kwh_per_km": 0.16,
+    "vehicles_per_person": 0.373,
+    "_veh_source": "1,879,790 vehicles paying marchamo 2025 / 5,044,197 census 2022",
+    "districts_file": "data/community_districts.json"
+  },
+  "logistics": {
+    "usd_per_t_km": 0.15,
+    "haul_km": {
+      "mango": 30,
+      "pina": 30,
+      "banano": 30,
+      "platano": 30,
+      "harinas": 10,
+      "cafe": 20,
+      "harina_banano": 30,
+      "rastrojo_pina": 15,
+      "pulpa_cafe": 10,
+      "heno_pasto": 15
+    },
+    "pretreatment_liquid_usd_per_t": 1.0,
+    "_note": "assumed road haul of fresh feedstock to the node and land application of press liquid under permit; peels and trimmings returned to the farm as compost"
+  },
+  "cold_chain": {
+    "precool_kwh_per_kg": 0.013,
+    "process_room_kwh_per_kg": 0.05,
+    "adsorption_cop": 0.35,
+    "electric_chiller_cop": 4.0,
+    "adsorption_aux_kwh_per_kwh": 0.03,
+    "chill_kwh_per_kg": 0.015,
+    "chill_cop": 3.0,
+    "freeze_kwh_per_kg": 0.082,
+    "freeze_cop": 1.6,
+    "ammonia_absorption_cop": 0.35,
+    "free_cooling_limit_c": 20.0,
+    "self_cooling_baseline_cop": 4.5,
+    "_note": "Adsorption chillers run on 45-55 C water (COP ~0.5, chilled water 12-15 C); LiBr absorption needs ~75-95 C and ammonia absorption freezing >100 C. Pre-cooling 28->15 C; chilling 15->0 C; freezing latent 75% water x 334 kJ/kg plus subcooling to -25 C",
+    "adsorption_cop_range": [
+      0.3,
+      0.5
+    ],
+    "adsorption_capex_usd_per_kw_cooling": 700.0,
+    "adsorption_capex_range": [
+      500.0,
+      900.0
+    ],
+    "adsorption_life_years": 15,
+    "_note_cop": "Below 70 C driving heat a two-stage silica-gel/water adsorption chiller is needed (Saha et al. 2001); COP 0.35 central (0.3-0.5); capital US$700/kW cooling is an assumption"
+  },
+  "tax": {
+    "vat_general": 0.13,
+    "vat_agri_inputs": 0.01,
+    "_note": "Ley 9635 IVA; reduced 1% for agricultural inputs/animal feed; non-monetary consideration taxed at market value (Decreto 41779-H arts. 13.3, 17.3)"
+  },
+  "apiculture": {
+    "roof_usable_fraction": 0.6,
+    "hives_per_node": 100,
+    "honey_kg_per_hive": 30.0,
+    "meadow_honey_kg_per_ha": 100.0,
+    "meadow_honey_range": [
+      70.0,
+      300.0
+    ],
+    "national_imports_t": 456.0,
+    "national_production_t": 1180.0,
+    "national_hives": 39376,
+    "honey_price_usd_kg": 6.0,
+    "green_roof_capex_usd_per_m2": 60.0,
+    "drone_seeding_usd_per_ha": 200.0,
+    "fte_per_100_hives": 0.5,
+    "crop_coefficient": 0.8,
+    "effective_rain_fraction": 0.8,
+    "_note": "Roofs of data-centre, dryer and RAS halls; 40% kept for dry coolers, access and setbacks. Hive yield 30-32 kg (MAPA Brasil/PROCOMER); imports 456 t (2024); production 1,180 t and 39,376 hives (2018). Buckwheat honey potential 70-100 kg/ha, best cultivars 150-300 (Chorbinski et al. 2024). Price, roof cost, seeding cost and FTE are assumptions",
+    "hive_shelter_cooling_w": 50.0,
+    "hive_cooling_threshold_c": 30.0,
+    "brood_break_days": 21,
+    "brood_break_w_per_hive": 15.0,
+    "brood_break_cop": 2.5,
+    "_note_shelter": "Shaded, ventilated rooftop hive shelters set back from dry-cooler exhaust; adsorption-chilled water trims shelter air when ERA5 air exceeds 30 C. Optional 3-week cold-storage brood break at about 4 C for Varroa control (WSU trials) is electric. Assumptions."
+  },
+  "integrated": {
+    "heat_pump_backup_cop": 3.0,
+    "curtailment_mode": "IT fully off for the non-permitted fraction of hours (upper bound on interruption)",
+    "_note": "Critical loads: RAS pumps/aeration and RAS heat. During IT curtailment the RAS heat must come from tank inertia or backup heat pumps on firm supply."
+  }
+}

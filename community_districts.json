@@ -1,0 +1,137 @@
+{
+ "_source": "INEC 2022 population estimates by district (via Telencuestas); district assigned from plant location, to be verified",
+ "nodes": {
+  "1": [
+   "Tilarán/Tronadora"
+  ],
+  "2": [
+   "Cañas/Cañas"
+  ],
+  "3": [
+   "Cañas/Cañas"
+  ],
+  "4": [
+   "Tilarán/Arenal"
+  ],
+  "5": [
+   "Upala/Aguas Claras"
+  ],
+  "6": [
+   "Upala/Aguas Claras"
+  ],
+  "7": [
+   "San Carlos/Aguas Zarcas"
+  ],
+  "8": [
+   "San Ramón/Peñas Blancas"
+  ],
+  "9": [
+   "San Carlos/Venecia"
+  ],
+  "10": [
+   "San Carlos/Venecia"
+  ],
+  "11": [
+   "San Carlos/Venecia"
+  ],
+  "12": [
+   "San Carlos/Florencia"
+  ],
+  "13": [
+   "San Ramón/Ángeles"
+  ],
+  "14": [
+   "San Ramón/San Lorenzo"
+  ],
+  "15": [
+   "San Ramón/Ángeles"
+  ],
+  "16": [
+   "Río Cuarto/Río Cuarto"
+  ],
+  "17": [
+   "Río Cuarto/Río Cuarto"
+  ],
+  "18": [
+   "Río Cuarto/Río Cuarto"
+  ],
+  "19": [
+   "Puntarenas/Acapulco",
+   "Puntarenas/Pitahaya"
+  ],
+  "20": [
+   "Santa Ana/Uruca"
+  ],
+  "21": [
+   "Santa Ana/Brasil"
+  ],
+  "22": [
+   "Santa Ana/Brasil"
+  ],
+  "23": [
+   "Alajuela/La Garita"
+  ],
+  "24": [
+   "Alajuela/Turrúcares"
+  ],
+  "25": [
+   "Atenas/Escobal"
+  ],
+  "26": [
+   "Paraíso/Orosi"
+  ],
+  "27": [
+   "Paraíso/Cachí"
+  ],
+  "28": [
+   "Jiménez/Tucurrique"
+  ],
+  "29": [
+   "Turrialba/Santa Rosa"
+  ],
+  "30": [
+   "Turrialba/Santa Teresita"
+  ],
+  "31": [
+   "Siquirres/Reventazón"
+  ],
+  "32": [
+   "Tarrazú/San Carlos"
+  ]
+ },
+ "population_2022": {
+  "Tilarán/Tronadora": 2022,
+  "Tilarán/Arenal": 2674,
+  "Cañas/Cañas": 25541,
+  "Upala/Aguas Claras": 5597,
+  "San Carlos/Aguas Zarcas": 26455,
+  "San Ramón/Peñas Blancas": 12450,
+  "San Carlos/Venecia": 12193,
+  "San Carlos/Florencia": 18486,
+  "San Ramón/Ángeles": 2491,
+  "San Ramón/San Lorenzo": 2086,
+  "Río Cuarto/Río Cuarto": 5364,
+  "Puntarenas/Acapulco": 1600,
+  "Puntarenas/Pitahaya": 2665,
+  "Santa Ana/Uruca": 9063,
+  "Santa Ana/Brasil": 3277,
+  "Alajuela/La Garita": 9687,
+  "Alajuela/Turrúcares": 9153,
+  "Atenas/Escobal": 1042,
+  "Paraíso/Orosi": 9849,
+  "Paraíso/Cachí": 5682,
+  "Jiménez/Tucurrique": 5480,
+  "Turrialba/Santa Rosa": 5566,
+  "Turrialba/Santa Teresita": 5235,
+  "Siquirres/Reventazón": 4723,
+  "Tarrazú/San Carlos": 2043
+ },
+ "comparators": {
+  "quantum_limon": {
+   "Limón/Limón": 54416
+  },
+  "palo_negro_bagaces": {
+   "Bagaces/Bagaces": 16804
+  }
+ }
+}

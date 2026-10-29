@@ -1,0 +1,58 @@
+SECADORES DIGITALES FRENTE A CENTROS DE DATOS QUANTUM Y COSFIN: ANÁLISIS COMUNITARIO Y AMBIENTAL
+DIGITAL DRYERS VERSUS QUANTUM & COSFIN DATA CENTRES: A COMMUNITY & ENVIRONMENTAL ANALYSIS
+
+CONTENIDO
+01_Manuscritos/                 Manuscrito en español (30 p.) e inglés (29 p.), material suplementario de cada idioma
+                                (notas complementarias, Cuadros S1–S7, Fig. S1–S14), carta de presentación,
+                                declaración CRediT y plantilla de personas revisoras.
+01_Manuscritos/Para_Pares_Anonimo/   Manuscritos y suplementos sin nombre de autor.
+02_Figuras_300dpi/              Figuras del artículo (01–02) y suplementarias (S01–S14), español e inglés.
+03_Modelo/                      Modelo Python, supuestos, datos (sitios, fibra, distritos), pruebas, figuras, generador
+                                de manuscritos y salidas calculadas con ERA5.
+04_Script_ERA5/                 Descargador ERA5 2010–2025 (34 ubicaciones; día lluvioso ≥ 1,0 mm, igual que el modelo).
+05_Datos_ERA5/                  Series horarias y diarias ERA5 2010–2025 de las 34 ubicaciones, con registro de procedencia.
+06_Envio_UCR/                   Conjunto limpio para subir a la revista (ver abajo).
+Respuesta_al_arbitraje.txt      Respuesta punto por punto a los arbitrajes internos (documento de trabajo).
+
+QUÉ SUBIR A LA REVISTA (06_Envio_UCR)
+  Manuscrito_Anonimo_ES_Secadores_Digitales.docx         manuscrito para pares
+  Manuscrito_Anonimo_ES_Secadores_Digitales_Suplementario.docx
+  Carta_Presentacion_ES.docx                             confidencial para la editorial
+  Declaracion_Contribuciones_CRediT.docx                 documento complementario exigido
+  Revisores_Sugeridos_PLANTILLA.docx                     COMPLETAR: 5 especialistas externos, ≥3 internacionales
+  Modelo_y_datos_anonimo.zip                             código, supuestos, datos, descargador y series horarias ERA5,
+                                                         sin nombre de autor (85 MB)
+  + Autorización de publicación y uso de documento       DESCARGAR DEL SITIO DE LA REVISTA Y FIRMAR
+
+PENDIENTES ANTES DEL ENVÍO
+1. Firmar la autorización de publicación y completar las cinco personas revisoras (≥3 internacionales). La carta de
+   presentación declara que se adjuntan: súbalos con el envío.
+2. Verificar la paginación en Microsoft Word (30 páginas en LibreOffice; dentro del límite).
+3. Confirmar la asignación de cada central a su distrito (03_Modelo/data/community_districts.json).
+4. Confirmar los supuestos de dimensionamiento: camarón y pargo en los 32 nodos, cada especie a 3 veces la producción
+   nacional de 2020 para la venta (6873 t y 2052 t) más 46 kg/persona/año en peso vivo para los 190 424 habitantes de
+   los distritos anfitriones (8760 t; total 13 619 t de camarón y 4066 t de pargo); pargo en RAS marino de bajo recambio con agua de mar artificial; café y pulpa al
+   70 % de la cosecha nacional; 6560 ha/año de rastrojo de piña; 490 000 t/año de pasto.
+5. Confirmar los supuestos de apicultura: 100 colmenas por nodo, 30 kg/colmena, techos verdes a US$60/m², miel a US$6/kg.
+6. Consultar a una persona asesora tributaria costarricense sobre el pago en especie del servicio de secado.
+7. Antes de cualquier compromiso con las comunidades: el beneficio solo se paga con caja tras el cargo de capital
+   (se financia en el caso central y se suspende en los casos lluvioso, seco y conservador).
+8. Obtener por central la energía hidroeléctrica excedente, la capacidad de conexión y los términos de contrato
+   con el ICE; y, para la acuicultura, fuente de agua (5,8 Mm³/año, 185 L/s), permiso de descarga y manejo de salmuera.
+9. Confirmar los costos supuestos de la asignación de mariscos (alimento, semilla, capital RAS de US$10 por kg/año) y
+   de la óptica para entrenamiento síncrono (US$5000 por transceptor de 400 G; US$200 000 por par y tramo).
+
+NOTA SOBRE LOS DATOS ERA5
+  Las series diarias archivadas traen una columna wet_day calculada con 0,1 mm. El modelo no la usa: cuenta
+  los días lluviosos con 1,0 mm a partir de la serie horaria. El descargador incluido ya usa 1,0 mm.
+
+CÓMO REPRODUCIR
+  Descomprimir 05_Datos_ERA5/Secadores_ERA5_historical.zip dentro de 05_Datos_ERA5, y luego:
+  cd 03_Modelo
+  pip install -r requirements.txt
+  python secadores_model.py --era5 ../05_Datos_ERA5/Secadores_ERA5_historical
+  python test_secadores.py
+  python make_figures.py
+  python build_manuscript.py plantilla_ucr.docx ../manuscritos_nuevos
+Sin --era5 el modelo se detiene con un error; el modo de respaldo (climatologías regionales y perfiles sintéticos) se pide
+explícitamente con --synthetic y no reproduce los resultados archivados.

@@ -1,0 +1,14 @@
+﻿Variable,Valor,Unidad
+Sitio de referencia,"Balsa Inferior, Florencia / San Carlos",
+Capacidad hidroeléctrica publicada,37.5,MW
+Carga TI conceptual,4.0,MW
+PUE objetivo conceptual,1.1,
+Carga eléctrica de instalación,4.4,MW
+Fracción de calor TI recuperable,0.85,% como fracción
+Calor recuperable continuo,3.4,MW térmicos
+Calor recuperable anual,29.78,GWh térmicos/año
+Utilización anual del secador,0.65,% como fracción
+Calor al secado,19.36,GWh térmicos/año
+Consumo térmico específico adoptado,1.1,kWh/kg de agua eliminada
+Agua removida,17600.0,t/año
+Equivalente de piña fresca (85%→15% humedad),21371.0,t/año

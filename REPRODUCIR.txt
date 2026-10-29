@@ -1,0 +1,8 @@
+Reproduction (one command, from this folder, after unzipping the ERA5 archive next to it):
+
+  pip install -r requirements.txt
+  python secadores_model.py --era5 ../Datos_ERA5/Secadores_ERA5_historical && python test_secadores.py
+
+The model stops with an error if --era5 is missing or the folder does not exist. The fallback without ERA5
+(regional climatologies, synthetic wind and solar) must be requested explicitly with --synthetic and does not
+reproduce the archived results.
